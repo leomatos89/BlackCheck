@@ -1,25 +1,39 @@
-package com.example.blackcheck;
+package com.example.blackcheck.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.example.blackcheck.R;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView imgStart ;
     private Button btentrar;
-
+    private TextView txtRegistrar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         imgStart = findViewById(R.id.img_start);
         btentrar = findViewById(R.id.btEntrar);
+        txtRegistrar = findViewById(R.id.txtRegistrar);
+        txtRegistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),CadastroActivity.class);
+                startActivity(intent);
+            }
+        });
         fadeOutImage();
+
+
     }
 
         private void fadeOutImage() {

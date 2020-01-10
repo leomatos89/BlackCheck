@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CadastroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Fundo_app"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="REGISTRAR-SE"
+            android:textColor="@color/Amarelo_app"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bordas_edittext"
+            android:ems="10"
+            android:hint="Nome completo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bordas_edittext"
+            android:ems="10"
+            android:hint="CPF"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bordas_edittext"
+            android:ems="10"
+            android:hint="Email "
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtSenhaCad"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bordas_edittext"
+            android:ems="10"
+            android:hint="Senha "
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtConfirmaSenha"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bordas_edittext"
+            android:ems="10"
+            android:hint="Confirmar senha "
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtTelefone"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bordas_edittext"
+            android:ems="10"
+            android:hint="Telefone "
+            android:inputType="textPersonName" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="CheckBox"
+            android:textColor="@color/Amarelo_app" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="CheckBox"
+            android:textColor="@color/Amarelo_app" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bt_entrar"
+            android:text="CADASTRAR" />
+    </LinearLayout>
+</ScrollView>
